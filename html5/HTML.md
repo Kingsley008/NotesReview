@@ -31,3 +31,5 @@ HTML 知识点整理
         * cookies 的过期时间可以自定义，在过期后失效。
         * sessionStorage 的有效时间为用户的会话时间，在浏览器关闭后消失。
         * localStorage 理论上可以永久保存数据（用户不主动删除的话）。
+        
+    * test git

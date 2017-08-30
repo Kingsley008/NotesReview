@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10b7f605-d7d2-40a0-8cd6-72673f206f6e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/CSS.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html5/HTML.md" afterPath="$PROJECT_DIR$/html5/HTML.md" />
     </list>
@@ -17,22 +18,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+      <file leaf-file-name="CSS.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/CSS.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="594">
+                <caret line="187" column="29" lean-forward="true" selection-start-line="187" selection-start-column="29" selection-end-line="187" selection-end-column="29" />
+                <folding>
+                  <marker date="1504078730723" expanded="true" signature="2424:2474" ph="{...}" />
+                  <marker date="1504078730723" expanded="true" signature="2657:2752" ph="{...}" />
+                  <marker date="1504078730723" expanded="true" signature="2820:2922" ph="{...}" />
+                  <marker date="1504078730723" expanded="true" signature="3046:3221" ph="{...}" />
+                  <marker date="1504078730723" expanded="true" signature="3312:3437" ph="{...}" />
+                  <marker date="1504078730723" expanded="true" signature="3738:3768" ph="..." />
+                  <marker date="1504078730723" expanded="true" signature="3738:3825" ph="..." />
+                  <marker date="1504078730723" expanded="true" signature="3866:3966" ph="{...}" />
+                  <marker date="1504078730723" expanded="true" signature="3980:4077" ph="{...}" />
+                  <marker date="1504078730723" expanded="true" signature="4093:4133" ph="{...}" />
+                  <marker date="1504078730723" expanded="true" signature="4174:4248" ph="{...}" />
+                  <marker date="1504078730723" expanded="true" signature="4339:4529" ph="..." />
+                  <marker date="1504078730723" expanded="true" signature="4578:4681" ph="{...}" />
+                  <marker date="1504078730723" expanded="true" signature="4729:4905" ph="{...}" />
+                  <marker date="1504078730723" expanded="true" signature="4970:5069" ph="{...}" />
+                  <marker date="1504078730723" expanded="true" signature="5117:5152" ph="{...}" />
+                  <marker date="1504078730723" expanded="true" signature="5175:5218" ph="{...}" />
+                </folding>
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HTML.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HTML.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html5/HTML.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="126">
-                <caret line="41" column="23" lean-forward="true" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+              <first_editor relative-caret-position="-472">
+                <caret line="18" column="68" lean-forward="false" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -48,7 +70,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/css/css.md" />
         <option value="$PROJECT_DIR$/html5/HTML.md" />
+        <option value="$PROJECT_DIR$/css/CSS.md" />
       </list>
     </option>
   </component>
@@ -85,6 +109,11 @@
             <id>XPath</id>
           </State>
         </expanded-state>
+        <selected-state>
+          <State>
+            <id>AngularJS</id>
+          </State>
+        </selected-state>
       </profile-state>
     </entry>
   </component>
@@ -109,6 +138,11 @@
             <path>
               <item name="NotesReview" type="b2602c69:ProjectViewProjectNode" />
               <item name="NotesReview" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NotesReview" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NotesReview" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NotesReview" type="b2602c69:ProjectViewProjectNode" />
@@ -159,16 +193,24 @@
       <updated>1504059640257</updated>
       <workItem from="1504059641491" duration="5458000" />
     </task>
+    <task id="LOCAL-00001" summary="添加了 离线缓存的知识点">
+      <created>1504068584750</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1504068584750</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8146000" />
+    <option name="totallyTimeSpent" value="18329000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-10" y="-10" width="1940" height="1043" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18371212" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17874141" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -198,6 +240,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="添加了 离线缓存的知识点" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加了 离线缓存的知识点" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -234,9 +280,38 @@
     <entry file="file://$PROJECT_DIR$/html5/HTML.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="126">
-            <caret line="41" column="23" lean-forward="true" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+          <first_editor relative-caret-position="-472">
+            <caret line="18" column="68" lean-forward="false" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
             <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/CSS.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="594">
+            <caret line="187" column="29" lean-forward="true" selection-start-line="187" selection-start-column="29" selection-end-line="187" selection-end-column="29" />
+            <folding>
+              <marker date="1504078730723" expanded="true" signature="2424:2474" ph="{...}" />
+              <marker date="1504078730723" expanded="true" signature="2657:2752" ph="{...}" />
+              <marker date="1504078730723" expanded="true" signature="2820:2922" ph="{...}" />
+              <marker date="1504078730723" expanded="true" signature="3046:3221" ph="{...}" />
+              <marker date="1504078730723" expanded="true" signature="3312:3437" ph="{...}" />
+              <marker date="1504078730723" expanded="true" signature="3738:3768" ph="..." />
+              <marker date="1504078730723" expanded="true" signature="3738:3825" ph="..." />
+              <marker date="1504078730723" expanded="true" signature="3866:3966" ph="{...}" />
+              <marker date="1504078730723" expanded="true" signature="3980:4077" ph="{...}" />
+              <marker date="1504078730723" expanded="true" signature="4093:4133" ph="{...}" />
+              <marker date="1504078730723" expanded="true" signature="4174:4248" ph="{...}" />
+              <marker date="1504078730723" expanded="true" signature="4339:4529" ph="..." />
+              <marker date="1504078730723" expanded="true" signature="4578:4681" ph="{...}" />
+              <marker date="1504078730723" expanded="true" signature="4729:4905" ph="{...}" />
+              <marker date="1504078730723" expanded="true" signature="4970:5069" ph="{...}" />
+              <marker date="1504078730723" expanded="true" signature="5117:5152" ph="{...}" />
+              <marker date="1504078730723" expanded="true" signature="5175:5218" ph="{...}" />
+            </folding>
           </first_editor>
           <second_editor />
         </state>

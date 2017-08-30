@@ -6,6 +6,7 @@ HTML 知识点整理
     * 加入了本地信息存储：localStorage, sessionStorage
     * 加入了语义化的标签：`<section> <article>...` 
     * 加入了表单的控件：date range ... 
+    * 加入了离线存储功能 
 2. 浏览器内核指的是什么？  
     * 浏览器的内核包括了渲染引擎和JS引擎，在JS引擎已经被独立了出来，所以一般说浏览器内核，我们说的就是它的渲染引擎。  
     * 其主要的功能：获取网站内容（解析HTML）整理讯息（解析CSS文件），以及计算网页的显示方式（渲染页面）
@@ -31,5 +32,29 @@ HTML 知识点整理
         * cookies 的过期时间可以自定义，在过期后失效。
         * sessionStorage 的有效时间为用户的会话时间，在浏览器关闭后消失。
         * localStorage 理论上可以永久保存数据（用户不主动删除的话）。
+ 7. H5如何实现APP应用的离线存储功能  
+    * 定义  
+       ```html <!DOCTYPE HTML>
+            <html manifest = "cache.manifest">
+            ...
+            </html>
+         ```  
+    * 定义 cache.manifest
+        ```
+        CACHE MANIFEST
+        #v0.11
         
-    * test git
+        CACHE:
+        
+        js/app.js
+        css/style.css
+        
+        NETWORK:
+        resourse/logo.png
+        
+        FALLBACK:
+        / /offline.html
+        ```
+    * 在线时，浏览器看到html标签中声明了manifest 它就会请求manifest文件，如果是第一次访问的话
+    就会根据cache.manifest 来下来离线访问所需要的资源 
+    在离线时，就会使用离线存储的资源 

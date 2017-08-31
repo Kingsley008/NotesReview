@@ -1,5 +1,7 @@
 # javascript 进阶
-##js对象原型的内存分布
+
+js对象原型的内存分布
+---
 
 * F构造函数有两个原型对象:  
 F.prototype.\_\_proto__ 指向  Object.prototype；  
@@ -62,9 +64,9 @@ JavaScript 采用词法作用域(lexical scoping)，也就是静态作用域。
 函数运行时三大要素
 ---
 
-* AO  
-* ScopeChain
-* this
+* VO/AO -- 变量对象
+* scope chain -- 作用域链 
+* this -- 运行上下文
 ---
 ```javascript
     var scope = "global scope"; 
@@ -134,11 +136,144 @@ JavaScript 采用词法作用域(lexical scoping)，也就是静态作用域。
     ECStack = {
         globalcontext
     }
+```
 
+```javascript
+    var scope = "global scope";
+    function checkscope(){
+        var scope = "local scope";
+        function f(){
+            return scope;
+        }
+        return f;
+    }
+    checkscope()();
+```
+```
+    ECStack = [globalContext]
+    //初始化全局环境
+    globalContext = {
+        AO = {
+            scope:undefined,
+            checkscope:undefined,
+        },
+        scope:{globContext.AO},
+        this:undefined
+    }
+    // 执行
+        globalContext = {
+            AO = {
+                scope:'global scope',
+                checkscope: function(){..},
+            }
+            scope:{globContext.AO}
+        }
+    // 遇到可执行的函数 入栈 建立上下文 
+     ECStack = [globalContext, checkScopeContext]
+     checkScopeContext = {
+        AO = { 
+            scope: undefined,
+            f : undefined,
+        }
+          scope:[{checkScopeContext.AO},{globContext.AO}]
+     } 
+     // 函数执行
+             checkScopeContext = {
+                AO = { 
+                    scope: 'local scope',
+                    f : function(){},
+                }
+                  scope:[{checkScopeContext.AO},{globContext.AO}]
+             } 
+    // 在 checkScopeContext.AO 找到f 并且 返回函数 f 
+    // checkScope函数结束出栈
+    ECStack = [globalContext]  
+    // 执行 f 函数 入栈 建立上下文 
+    ECStack = [globalContext，fContext]
+    fContext = {
+        AO = {
+            
+        }
+        scope:[{ fContext.AO},{checkScopeContext.AO},{globContext.AO}]
+    }
+    // 函数执行 找到  在 checkScopeContext.AO 找到变量 scope  返回 函数结束 出栈
+       ECStack = [globalContext]
+       
 ```
    
-闭包的作用与应用
+闭包的定义与应用
 ---
+定义：在外部函数销毁的情况，还能够访问外部函数的自由变量
+
+``` javascript 
+    var data = [];
+    for(var i = 0; i < 3; i++){
+        data[i] = function (){
+            console.log(i);
+        }
+    }
+    data[0](); //3
+    data[1](); //3
+    data[2](); //3
+
+```
+
+```
+globalContext = {
+    AO:{
+        i:undefined,
+        data:[]
+    }
+    Scope:[[globalContext.AO]],
+    this:undefined
+}
+
+//data[0] 执行
+
+dataContext = {
+    AO:{
+        arguments:{
+            length:0,
+        },
+    }
+    Scope:[[dataContext.AO][globalContext.AO]]
+}
+
+// 在globalContext.AO 找到 i  输出3  函数结束 
+
+
+
+```
+
+```javascript
+    var data = []; 
+   for(var i = 0; i < 3; i++){
+        
+        data[i] = (function(i){
+               
+                return function (){
+                console.log(i);
+            }
+        })(i)
+           
+    }
+      
+    data[0](); //0
+    data[1](); //1
+    data[2](); //2 
+
+```
+
+```
+//此时 data[0]指向的socpe 已经发生了变化 
+
+data[0].scope = [[匿名.AO][globalContext.AO]]
+
+//在每个匿名AO中 都保存了 i 的变量 分别为 0 1 2 
+
+
+```
+
 
 apply 和 call 的模拟实现
 ---

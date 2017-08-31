@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10b7f605-d7d2-40a0-8cd6-72673f206f6e" name="Default" comment="">
+    <list default="true" id="10b7f605-d7d2-40a0-8cd6-72673f206f6e" name="Default" comment="CSS 补充全屏布局">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascript/js基础.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascript/js进阶.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/CSS.md" afterPath="$PROJECT_DIR$/css/CSS.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,13 +17,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="CSS.md" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="CSS.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/CSS.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="542">
-                <caret line="191" column="46" lean-forward="true" selection-start-line="191" selection-start-column="46" selection-end-line="191" selection-end-column="46" />
+              <first_editor relative-caret-position="1846">
+                <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="77" selection-end-column="3" />
                 <folding>
                   <marker date="1504079951257" expanded="true" signature="2424:2474" ph="{...}" />
                   <marker date="1504079951257" expanded="true" signature="2657:2752" ph="{...}" />
@@ -48,13 +49,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HTML.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html5/HTML.md">
+      <file leaf-file-name="js基础.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascript/js基础.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-472">
-                <caret line="18" column="68" lean-forward="false" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
-                <folding />
+              <first_editor relative-caret-position="-30">
+                <caret line="79" column="70" lean-forward="false" selection-start-line="79" selection-start-column="70" selection-end-line="79" selection-end-column="70" />
+                <folding>
+                  <marker date="1504164379899" expanded="true" signature="986:1024" ph="//..." />
+                  <marker date="1504164379899" expanded="true" signature="1303:1378" ph="{...}" />
+                  <marker date="1504164379899" expanded="true" signature="1739:1778" ph="{...}" />
+                  <marker date="1504164379899" expanded="true" signature="1803:1836" ph="{...}" />
+                  <marker date="1504164379899" expanded="true" signature="2338:2803" ph="{...}" />
+                  <marker date="1504164379899" expanded="true" signature="2430:2757" ph="{...}" />
+                  <marker date="1504164379899" expanded="true" signature="2459:2744" ph="{...}" />
+                  <marker date="1504164379899" expanded="true" signature="2489:2526" ph="..." />
+                  <marker date="1504164379899" expanded="true" signature="2555:2591" ph="..." />
+                  <marker date="1504164379899" expanded="true" signature="2620:2658" ph="..." />
+                  <marker date="1504164379899" expanded="true" signature="2688:2727" ph="..." />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="js进阶.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/javascript/js进阶.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="360">
+                <caret line="137" column="3" lean-forward="true" selection-start-line="137" selection-start-column="3" selection-end-line="137" selection-end-column="3" />
+                <folding>
+                  <marker date="1504166991490" expanded="true" signature="233:240" ph="{...}" />
+                  <marker date="1504166991490" expanded="true" signature="806:842" ph="{...}" />
+                  <marker date="1504166991490" expanded="true" signature="861:906" ph="{...}" />
+                  <marker date="1504166991490" expanded="true" signature="923:1030" ph="//..." />
+                  <marker date="1504166991490" expanded="true" signature="1110:1228" ph="{...}" />
+                  <marker date="1504166991490" expanded="true" signature="1167:1204" ph="{...}" />
+                  <marker date="1504166991490" expanded="true" signature="1253:1388" ph="//..." />
+                  <marker date="1504166991490" expanded="true" signature="1737:1847" ph="{...}" />
+                  <marker date="1504166991490" expanded="true" signature="1788:1819" ph="{...}" />
+                </folding>
               </first_editor>
               <second_editor />
             </state>
@@ -72,6 +108,9 @@
         <option value="$PROJECT_DIR$/css/css.md" />
         <option value="$PROJECT_DIR$/html5/HTML.md" />
         <option value="$PROJECT_DIR$/css/CSS.md" />
+        <option value="$PROJECT_DIR$/javascript/javascript基础.md" />
+        <option value="$PROJECT_DIR$/javascript/js基础.md" />
+        <option value="$PROJECT_DIR$/javascript/js进阶.md" />
       </list>
     </option>
   </component>
@@ -88,11 +127,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="317" />
-    <option name="y" value="92" />
-    <option name="width" value="1423" />
-    <option name="height" value="1104" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="338" />
+    <option name="y" value="33" />
+    <option name="width" value="1526" />
+    <option name="height" value="999" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -141,19 +180,19 @@
             <path>
               <item name="NotesReview" type="b2602c69:ProjectViewProjectNode" />
               <item name="NotesReview" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="html5" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NotesReview" type="b2602c69:ProjectViewProjectNode" />
               <item name="NotesReview" type="462c0819:PsiDirectoryNode" />
-              <item name="html5" type="462c0819:PsiDirectoryNode" />
+              <item name="javascript" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -191,6 +230,8 @@
       <option name="presentableId" value="Default" />
       <updated>1504059640257</updated>
       <workItem from="1504059641491" duration="5458000" />
+      <workItem from="1504143126608" duration="5195000" />
+      <workItem from="1504151420728" duration="8843000" />
     </task>
     <task id="LOCAL-00001" summary="添加了 离线缓存的知识点">
       <created>1504068584750</created>
@@ -199,99 +240,65 @@
       <option name="project" value="LOCAL" />
       <updated>1504068584750</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="CSS 补充全屏布局">
+      <created>1504079977147</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1504079977147</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19534000" />
+    <option name="totallyTimeSpent" value="35057000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-10" y="-10" width="1940" height="1043" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17874141" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1835008" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32014388" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30889422" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31610578" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42805755" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32014388" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30977622" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18371212" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42805755" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="添加了 离线缓存的知识点" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加了 离线缓存的知识点" />
+    <MESSAGE value="CSS 补充全屏布局" />
+    <option name="LAST_COMMIT_MESSAGE" value="CSS 补充全屏布局" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html5/HTML.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="348">
-            <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html5/HTML.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-472">
-            <caret line="18" column="68" lean-forward="false" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/CSS.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="542">
-            <caret line="191" column="46" lean-forward="true" selection-start-line="191" selection-start-column="46" selection-end-line="191" selection-end-column="46" />
+          <first_editor relative-caret-position="1846">
+            <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="77" selection-end-column="3" />
             <folding>
               <marker date="1504079951257" expanded="true" signature="2424:2474" ph="{...}" />
               <marker date="1504079951257" expanded="true" signature="2657:2752" ph="{...}" />
@@ -310,6 +317,138 @@
               <marker date="1504079951257" expanded="true" signature="4970:5069" ph="{...}" />
               <marker date="1504079951257" expanded="true" signature="5117:5152" ph="{...}" />
               <marker date="1504079951257" expanded="true" signature="5175:5218" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/javascript基础.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html5/HTML.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="348">
+            <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html5/HTML.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-455">
+            <caret line="18" column="68" lean-forward="false" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/CSS.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1846">
+            <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="77" selection-end-column="3" />
+            <folding>
+              <marker date="1504079951257" expanded="true" signature="2424:2474" ph="{...}" />
+              <marker date="1504079951257" expanded="true" signature="2657:2752" ph="{...}" />
+              <marker date="1504079951257" expanded="true" signature="2820:2922" ph="{...}" />
+              <marker date="1504079951257" expanded="true" signature="3046:3221" ph="{...}" />
+              <marker date="1504079951257" expanded="true" signature="3312:3437" ph="{...}" />
+              <marker date="1504079951257" expanded="true" signature="3738:3768" ph="..." />
+              <marker date="1504079951257" expanded="true" signature="3738:3825" ph="..." />
+              <marker date="1504079951257" expanded="true" signature="3866:3966" ph="{...}" />
+              <marker date="1504079951257" expanded="true" signature="3980:4077" ph="{...}" />
+              <marker date="1504079951257" expanded="true" signature="4093:4133" ph="{...}" />
+              <marker date="1504079951257" expanded="true" signature="4174:4248" ph="{...}" />
+              <marker date="1504079951257" expanded="true" signature="4339:4529" ph="..." />
+              <marker date="1504079951257" expanded="true" signature="4578:4681" ph="{...}" />
+              <marker date="1504079951257" expanded="true" signature="4729:4905" ph="{...}" />
+              <marker date="1504079951257" expanded="true" signature="4970:5069" ph="{...}" />
+              <marker date="1504079951257" expanded="true" signature="5117:5152" ph="{...}" />
+              <marker date="1504079951257" expanded="true" signature="5175:5218" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/javascript基础.md">
+      <provider editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="442">
+            <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/js基础.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-30">
+            <caret line="79" column="70" lean-forward="false" selection-start-line="79" selection-start-column="70" selection-end-line="79" selection-end-column="70" />
+            <folding>
+              <marker date="1504164379899" expanded="true" signature="986:1024" ph="//..." />
+              <marker date="1504164379899" expanded="true" signature="1303:1378" ph="{...}" />
+              <marker date="1504164379899" expanded="true" signature="1739:1778" ph="{...}" />
+              <marker date="1504164379899" expanded="true" signature="1803:1836" ph="{...}" />
+              <marker date="1504164379899" expanded="true" signature="2338:2803" ph="{...}" />
+              <marker date="1504164379899" expanded="true" signature="2430:2757" ph="{...}" />
+              <marker date="1504164379899" expanded="true" signature="2459:2744" ph="{...}" />
+              <marker date="1504164379899" expanded="true" signature="2489:2526" ph="..." />
+              <marker date="1504164379899" expanded="true" signature="2555:2591" ph="..." />
+              <marker date="1504164379899" expanded="true" signature="2620:2658" ph="..." />
+              <marker date="1504164379899" expanded="true" signature="2688:2727" ph="..." />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/js进阶.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="360">
+            <caret line="137" column="3" lean-forward="true" selection-start-line="137" selection-start-column="3" selection-end-line="137" selection-end-column="3" />
+            <folding>
+              <marker date="1504166991490" expanded="true" signature="233:240" ph="{...}" />
+              <marker date="1504166991490" expanded="true" signature="806:842" ph="{...}" />
+              <marker date="1504166991490" expanded="true" signature="861:906" ph="{...}" />
+              <marker date="1504166991490" expanded="true" signature="923:1030" ph="//..." />
+              <marker date="1504166991490" expanded="true" signature="1110:1228" ph="{...}" />
+              <marker date="1504166991490" expanded="true" signature="1167:1204" ph="{...}" />
+              <marker date="1504166991490" expanded="true" signature="1253:1388" ph="//..." />
+              <marker date="1504166991490" expanded="true" signature="1737:1847" ph="{...}" />
+              <marker date="1504166991490" expanded="true" signature="1788:1819" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />

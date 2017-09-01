@@ -10,7 +10,7 @@
 ---
 [this四种调用情况](js进阶/this四种调用情况.md)
 ---
-[apply 和 call 的模拟实现](js进阶/call&apply模拟实现)
+[apply 和 call 的模拟实现](js进阶/call&apply模拟实现.md)
 ---
 [new 的模拟实现](js进阶/new的模拟实现.md)
 --- 

@@ -1,0 +1,182 @@
+对象的属性
+--
+* 在ECMAScript中，对象的属性在创建时都带有一些特征值，这些值定义了对象属性的行为
+    * 数据属性
+        * \[\[Configurable]]：属性是否能被删除 默认true 
+        * \[\[Enumerable]]: 属性是否能用 for-in 枚举 默认 true
+        * \[\[Writable]]: 属性是否可改写 默认 true
+        * \[\[Value]]: 属性的值 默认 undefined 
+        ```javascript
+            // 使用 Object.defineProperty(obj,valueName,{}) 来修改属性的默认特性
+            var person = {};
+            // 定义了一个 person 对象　该对象的name属性为只读　无非修改和删除
+            Object.defineProperty(person, 'name',{
+                configurable:false,
+                value:"king",
+                writable:false,
+                enumerable:true
+            });
+            person.name = 'kkk';
+            delete  person.name;
+            console.log(person.name);
+            
+        ```
+    * 访问器属性
+        * \[\[get]] : 访问该属性会调用的函数
+        * \[\[set]] ：设置该属性会调用的函数
+        ```javascript
+            var king = {_age:20};
+            Object.defineProperty(king,'age',{
+                configurable: true,
+                enumerable:true,
+                get:function() {
+                  return this._age;
+                },
+                set:function(newValue) {
+                  if(newValue > 100 || newValue < 18) {
+                      console.log('not a right number of age');
+                      this._age = 20;
+                  } else {
+                      this._age = newValue;
+                  }
+                }
+            });
+            king.age = 10;
+            console.log(king.age);
+        ```
+        * 同时设置多个属性
+        ```javascript
+            // 使用Object.defineProperties 同时定义多个属性 
+            var person = {};
+            Object.defineProperties(person, {
+              name:{
+                  configurable:false,
+                  value:"king",
+                  writable:false,
+                  enumerable:true
+              },
+              age:{
+                  configurable: true,
+                  enumerable:true,
+                  get:function() {
+                    return this._age;
+                  },
+                  set:function(newValue) {
+                    if(newValue > 100 || newValue < 18) {
+                        console.log('not a right number of age');
+                        this._age = 20;
+                    } else {
+                        this._age = newValue;
+                    }
+                  }
+              }  
+            });
+        ```
+        
+对象的创建
+--
+* 字面量创建
+    * 缺点：对象没有复用性
+* 工厂函数创建
+    * 缺点：没有解决对象识别的问题 
+* 构造函数创建
+    * 缺点：重复创建共有的属性和方法
+* 原型创建
+    * 缺点：多个实例共享属性
+* 组合创建 
+    * 缺点：无非控制私有变量
+
+原型对象
+--
+* 构造函数的内部结构
+```javascript
+    function Person() {
+      
+    }
+    // prototype 默认会有一个constructor属性 指向构造函数本身
+    console.log(Person.prototype.constructor === Person);
+    //  __proto__ 指向 Function 对象的 原型属性
+    console.log(Person.__proto__ === Function.prototype);
+```
+* 构造函数的原型对象与实例之间的关系
+```javascript
+    function Person(name) {
+      this.name = name;
+    }
+    var person = new Person('king');
+    // 对象实例的 __proto__ 指向 构造函数的原型属性 与构造函数无关
+    console.log(person.__proto__ === Person.prototype );
+    // person.constructor 指向 构造函数本身
+    console.log(person.constructor === Person);
+    // 所以 person.xx 可以访问到 Person 原型属性 和 Object 原型属性 
+    // person.constructor  可以访问 Function.prototype 上定义的属性
+```
+* 判断一个属性是否为实例属性
+```javascript
+       function Person(name) {
+         this.name = name;
+       }
+       var person = new Person('king');
+       person.hasOwnProperty('name'); // true;
+        
+```
+* 原型与in操作符
+```javascript
+    // 无论属性在哪里定义 都会被in 操作符 访问到
+       function Person(name) {
+         this.name = name;
+       }
+       
+       Person.prototype.age  = 20;
+       var p = new Person('king');
+       for(var v in p) {
+           console.log(v);
+       }
+       
+    // Object.keys 返回一个包含当前对象可枚举的属性 字符串 数组
+    // 如果不想访问 对象原型上的属性名 使用 这个方法
+       var arr1 =  Object.keys(p);   
+       var arr2 =  Object.keys(Person.prototype);
+       console.log(arr1, arr2);
+           
+```
+* 使用字面量定义原型
+```javascript
+       function Person(name) {
+         this.name = name;
+       }
+       
+       // 使用字面量的方式 重新构建 原型 会导致原有的constructor属性丢失
+       Person.prototype = {
+            age:20,
+            sayName:function() {
+              console.log(this.name);
+            },
+            constructor:Person
+       }
+       
+```
+* 原型的动态性 
+```javascript
+    // 当我们不通过字面量修改原型的时候是可以动态更新原型的
+    function Person(name) {
+     this.name = name;
+    }
+    Person.prototype.age  = 20;
+    var p = new Person('123');
+    Person.prototype.age = 40;
+    console.log(p.age); // 40
+  
+```
+```javascript
+    // 但是我们通过字面量的方式修改属性 p.__proto__ 指向的依旧是创建时的 prototype
+        function Person(name) {
+         this.name = name;
+        }
+        Person.prototype.age  = 20;
+        var p = new Person('123');
+        Person.prototype = {
+            age:40
+        };
+        console.log(p.age); // 20
+```

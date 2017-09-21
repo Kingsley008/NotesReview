@@ -1,7 +1,7 @@
 Node 类型
 --
 * 通过nodeType判断node类型
-    * 1 为元素节点； 2为文本节点
+    * 1 为元素节点； 3为文本节点
     ```javascript
         // 处理子节点 返回元素节点
         function getElementNodes(parentNode) {

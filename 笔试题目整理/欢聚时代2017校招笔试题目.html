@@ -12,6 +12,27 @@
             height: 200px;
             background: linear-gradient(to bottom left,#fff,#333);
         }
+        li{
+            list-style: none;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            height:100px;
+            width:600px;
+            background-color: black;
+            padding: 0;
+        }
+        .gap {
+            flex: 1;
+        }
+        .icon {
+            width:80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: white;
+        }
+
     </style>
 </head>
 <body>
@@ -19,6 +40,18 @@
 <div class="linear">
 
 </div>
+<!--
+请用html和css实现以下效果（移动设备），要求①三个圆形icon大小为80px，固定不变，②被三个圆形icon划分的四个间距相等，③黑色背景需要占满移动设备的宽度
+-->
+<ul>
+    <li class="gap"></li>
+    <li class="icon"></li>
+    <li class="gap"></li>
+    <li class="icon"></li>
+    <li class="gap"></li>
+    <li class="icon"></li>
+    <li class="gap"></li>
+</ul>
 
 <script>
 

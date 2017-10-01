@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form name="myForm">
+        <input name="name" value="king">
+        <input type="password" name="password" value="12345">
+        <button type="submit">test</button>
+    </form>
+</body>
+<script src="AjaxUtil.js">
+
+</script>
+<script>
+    var data1 = AjaxUtil.serializeForm(document.forms['myForm']);
+    var obj = {
+        name : 'king',
+        password:'12345'
+    };
+    var data2 = AjaxUtil.serializePOSTObj(obj);
+    console.log(data2);
+</script>
+</html>

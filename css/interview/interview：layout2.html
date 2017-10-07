@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>两列布局</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .left {
+        background-color: red;
+    }
+
+    .right {
+        background-color: blue;
+    }
+
+    section div {
+        height: 100px;
+    }
+
+    section {
+        margin-top: 20px;
+    }
+
+    .f-cb::after {
+        content: '.';
+        height: 0;
+        visibility: hidden;
+        clear: both;
+    }
+</style>
+<body>
+<h2>题目</h2>
+<p>已知高度的情况下，实现两列布局：一列固定宽度 一列自适应</p>
+
+<!-- 1. float + BFC 优点代码量少 兼容性好 -->
+<section class="float-layout">
+    <style>
+        .float-layout .left {
+            float: left;
+            width: 300px;
+            margin-right: 50px;
+        }
+
+        .float-layout .right {
+            overflow: hidden;
+        }
+
+    </style>
+    <div class="left">
+
+    </div>
+    <div class="right">
+        <p>float + overflow </p>
+        <p>float + overflow </p>
+    </div>
+</section>
+<!--  2. float + fix  优点：兼容性好 缺点：代码量比较大 需要清楚浮动-->
+<section class="float-fix-layout f-cb">
+    <style>
+        .float-fix-layout .left {
+            float: left;
+            width: 300px;
+        }
+
+        .float-fix-layout .right-fix {
+            float: right;
+            width: 100%;
+            margin-left: -300px;
+        }
+
+        .float-fix-layout .right {
+            margin-left: 350px;
+        }
+
+    </style>
+    <div class="left">
+
+    </div>
+    <div class="right-fix">
+        <div class="right">
+            <p>float + fix </p>
+            <p>float + fix </p>
+        </div>
+    </div>
+
+</section>
+<!-- 3. table 布局 优点：兼容性好  缺点：代码量大 需要额外填充margin -->
+<section class="table-layout">
+    <style>
+        .table-layout {
+            margin-top: 20px;
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        .table-layout .left {
+            display: table-cell;
+            width: 300px;
+        }
+
+        .table-layout .margin {
+            display: table-cell;
+            width: 50px;
+        }
+
+        .table-layout .right {
+            display: table-cell;
+            background-origin: content-box;
+        }
+
+    </style>
+    <div class="left">
+
+    </div>
+
+    <div class="margin">
+
+    </div>
+
+    <div class="right">
+        <p> table</p>
+        <p> table</p>
+    </div>
+
+</section>
+<!-- 4. grid 网格布局 -->
+<section class="grid-layout">
+    <style>
+        .grid-layout {
+            display: grid;
+            grid-template-rows: 100px;
+            grid-template-columns: 300px 50px auto;
+        }
+
+    </style>
+
+    <div class="left">
+
+    </div>
+    <div class="margin">
+
+    </div>
+
+        <div class="right">
+            <p>grid </p>
+            <p>grid </p>
+        </div>
+
+</section>
+<!-- 5. flex 布局 -->
+<section class="flex-layout">
+    <style>
+        .flex-layout {
+            display: flex;
+        }
+        .flex-layout .left {
+            width:300px;
+            margin-right: 50px;
+        }
+        .flex-layout .right {
+            flex: 1;
+        }
+
+    </style>
+
+    <div class="left">
+
+    </div>
+
+    <div class="right">
+        <p>flex-layout</p>
+        <p>flex-layout</p>
+    </div>
+
+</section>
+<!-- 6. absolute 布局 -->
+<section class="absolute-layout">
+    <style>
+        .absolute-layout .left {
+            position: absolute;
+            width:300px;
+            left: 0;
+        }
+        .absolute-layout .right {
+            position: absolute;
+            left: 350px;
+            width: 100%;
+        }
+
+    </style>
+
+    <div class="left">
+
+    </div>
+
+    <div class="right">
+        <p>absolute-layout</p>
+        <p>absolute-layout</p>
+    </div>
+</section>
+
+</body>
+</html>

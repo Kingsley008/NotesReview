@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BFC</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 在BFC中 新建BFC 解决边距重叠问题-->
+<section class="sec-1">
+    <style>
+        .sec-1 {
+            overflow: hidden;
+            border: 1px solid sandybrown;
+        }
+
+        .sec-1 p {
+            margin: 10px 0;
+            background-color: red;
+        }
+
+    </style>
+    <p>1</p>
+    <p>2</p>
+    <div style="overflow: hidden">
+        <p>3</p>
+    </div>
+
+</section>
+
+<!-- 使用BFC 实现两列布局 清除浮动 -->
+<section class="sec-2" style="overflow: hidden">
+    <style>
+        .sec-2 .left{
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+        .sec-2 .right {
+            overflow: hidden;
+            height: 210px;
+            background-color: yellowgreen;
+        }
+    </style>
+    <div class="left">
+
+    </div>
+    <div class="right">
+
+    </div>
+</section>
+</body>
+</html>

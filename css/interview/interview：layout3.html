@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>纵向三栏布局</title>
+</head>
+<style>
+    * {
+        margin:0;
+        padding: 0;
+    }
+    html,body {
+        height: 100%;
+    }
+    .top, .btm {
+        height: 100px;
+    }
+    .top {
+        background-color: red;
+
+    }
+    .middle {
+        background-color:yellow;
+    }
+    .btm {
+        background-color:blue;
+    }
+    section{
+        float: left;
+        width: 300px;
+        height: 100%;
+        margin: 10px;
+    }
+
+</style>
+<body>
+
+<section class="absolute-layout">
+    <style>
+        .absolute-layout{
+            position: relative;
+        }
+        .absolute-layout .top {
+            position: absolute;
+            width: 100%;
+            top: 0;
+        }
+        .absolute-layout  .middle {
+            position: absolute;
+            top: 100px;
+            bottom: 100px;
+            width: 100%;
+        }
+        .absolute-layout  .btm {
+            position: absolute;
+            width: 100%;
+            bottom:0;
+        }
+
+    </style>
+    <div class="top">
+
+    </div>
+
+    <div class="middle">
+        <p>absolute-layout</p>
+        <p>absolute-layout</p>
+        <p>absolute-layout</p>
+        <p>absolute-layout</p>
+        <p>absolute-layout</p>
+    </div>
+
+    <div class="btm">
+
+    </div>
+</section>
+
+<section class="flex-layout">
+    <style>
+        .flex-layout {
+            display: flex;
+            flex-direction: column;
+        }
+        .flex-layout .middle {
+            flex: 1;
+        }
+
+    </style>
+    <div class="top">
+
+    </div>
+
+    <div class="middle">
+        <p>flex-layout</p>
+        <p>flex-layout</p>
+        <p>flex-layout</p>
+        <p>flex-layout</p>
+    </div>
+
+    <div class="btm">
+
+    </div>
+</section>
+
+<section class="grid-layout">
+    <style>
+        .grid-layout {
+            display: grid;
+            grid-template-rows: 100px auto 100px;
+            grid-template-columns: 100%;
+        }
+    </style>
+    <div class="top">
+
+    </div>
+
+    <div class="middle">
+        <p>grid-layout</p>
+    </div>
+
+    <div class="btm">
+
+    </div>
+</section>
+
+<section class="table-layout">
+    <style>
+        .table-layout {
+           display: table;
+            height: 100%;
+            width: 300px;
+        }
+
+        .table-layout .top, .table-layout .middle, .table-layout .btm {
+            display: table-row;
+            width: 100%;
+        }
+    </style>
+    <div class="top">
+        <div></div>
+    </div>
+
+    <div class="middle">
+        <p>table-layout</p>
+        <p>table-layout</p>
+        <p>table-layout</p>
+        <p>table-layout</p>
+    </div>
+
+    <div class="btm">
+        <div></div>
+    </div>
+</section>
+
+</body>
+</html>

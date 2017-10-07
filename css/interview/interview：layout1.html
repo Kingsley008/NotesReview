@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>layout 三列布局 </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .left{
+            background-color: red;
+        }
+        .right{
+            background-color: blue;
+        }
+        .center {
+            background-color: yellow;
+        }
+        article div {
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h3>题目</h3>
+    <article>
+        <p>在已知三列高度的情况下，写出三列布局，左边右边定宽，中间自适应</p>
+    </article>
+    <!-- 第一种方法 float 优点 兼容性好 缺点：需要做额外的工作来清除浮动 -->
+    <section class="layout-float" style="height: 100px;" >
+        <style>
+            .layout-float .left,.layout-float .right{
+                width: 300px;
+            }
+            .layout-float .left {
+                float: left;
+            }
+            .layout-float .right {
+                float: right;
+            }
+        </style>
+        <article class="left-center-right">
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="center">
+                <p>Float 布局</p>
+                <p>Float 布局</p>
+                <p>Float 布局</p>
+                <p>Float 布局</p>
+            </div>
+        </article>
+    </section>
+
+    <!-- 优点：试用于全屏布局  缺点： 元素脱离文档流 不适合做局部的布局 -->
+    <section class="absolute-layout" style="margin-top: 20px">
+        <style>
+            .absolute-layout .left {
+                position: absolute;
+                left: 0;
+                width:300px;
+            }
+            .absolute-layout .right {
+                position: absolute;
+                right:0;
+                width:300px;
+            }
+            .absolute-layout .center {
+                position: absolute;
+                right: 300px;
+                left: 300px;
+            }
+        </style>
+        <article class="left-center-right">
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="center">
+                <p>absolute 布局</p>
+                <p>absolute 布局</p>
+                <p>absolute 布局</p>
+                <p>absolute 布局</p>
+            </div>
+        </article>
+    </section>
+    <!-- 优点：实现优雅 缺点：大范围布局性能不好 兼容性不好 -->
+    <section class="flex-layout" style="margin-top: 140px">
+        <style>
+            .flex-layout>article {
+                display: flex;
+                align-items: stretch;
+
+            }
+            .flex-layout .left{
+               width:300px;
+                height: auto;
+            }
+            .flex-layout .right {
+                width: 300px;
+                height: auto;
+            }
+            .flex-layout .center {
+                height: 300px;
+                flex: 1;
+            }
+        </style>
+        <article class="left-center-right">
+            <div class="left"></div>
+            <div class="center">
+                <p>flex 布局</p>
+                <p>flex 布局</p>
+                <p>flex 布局</p>
+                <p>flex 布局</p>
+                <p>flex 布局</p>
+                <p>flex 布局</p>
+            </div>
+            <div class="right"></div>
+        </article>
+    </section>
+    <!-- table布局 优点：兼容性好  缺点：只能实现三列等高-->
+    <section class="layout-table" style="margin-top: 20px">
+        <style>
+            .layout-table article {
+                display: table;
+                width: 100%;
+            }
+            .layout-table article div {
+                display: table-cell;
+            }
+            .layout-table .left {
+                width: 300px;
+            }
+
+            .layout-table .right {
+                width: 300px;
+            }
+
+
+        </style>
+        <article class="left-center-right">
+            <div class="left"></div>
+            <div class="center">
+                <p>table 布局</p>
+                <p>table 布局</p>
+                <p>table 布局</p>
+                <p>table 布局</p>
+                <p>table 布局</p>
+                <p>table 布局</p>
+            </div>
+            <div class="right"></div>
+        </article>
+    </section>
+    <!-- grid 网格布局  css3 实现优雅  兼容不好-->
+    <section class="grid-layout" style="margin-top: 20px">
+        <style>
+            .grid-layout article {
+                display: grid;
+                width: 100%;
+                grid-template-rows: 100px;
+                grid-template-columns: 300px auto 300px;
+            }
+        </style>
+        <article class="left-center-right">
+            <div class="left"></div>
+            <div class="center">
+                <p>grid 布局</p>
+                <p>grid 布局</p>
+                <p>grid 布局</p>
+                <p>grid 布局</p>
+                <p>grid 布局</p>
+                <p>grid 布局</p>
+            </div>
+            <div class="right"></div>
+        </article>
+    </section>
+
+</body>
+</html>

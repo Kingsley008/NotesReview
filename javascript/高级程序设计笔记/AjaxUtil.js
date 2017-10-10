@@ -94,7 +94,6 @@ AjaxUtil = {
     ,
     serializePOSTObj: function (obj) {
         var parts = [];
-        var randomNum = 0;
         var name = '';
         var value = '';
         for (var i in obj) {
@@ -160,7 +159,12 @@ AjaxUtil = {
         xhr.open('POST', option.url, true);
         xhr.setRequestHeader('Content-type', "application/json");
         xhr.send(JSON.stringify(option.data));
+    },
+    jsonp: function (url, onsuccess, onerror, charset) {
+        
     }
+        
+    
 
 }
 ;

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对象继承</title>
+</head>
+<body>
+<script>
+    /* 1. 构造函数实现 继承*/
+    function SuperClass1(name) {
+        this.name = name;
+    }
+    SuperClass1.prototype.say = function () {
+        console.log('my name is ' + this.name)
+    };
+    function SubClass1(age, name) {
+        this.age = age;
+        SuperClass1.call(this, name)
+    }
+    var sub1 = new SubClass1(20,'KING');
+    console.log(sub1.name); // KING
+   // console.log(sub1.say()); // sub1.say is not a function
+    /* 优点：可以给父类传递参数 缺点：无法继承父类原型上的属性*/
+
+    /*2. 原型实现 继承*/
+    function SuperClass2(name) {
+        this.name = name;
+        this.arr = [1,2,3];
+    }
+    SuperClass2.prototype.say = function () {
+        console.log('my name is ' + this.name)
+    };
+    function SubClass2(age, name) {
+        this.age = age;
+    }
+    SubClass2.prototype = new SuperClass2();
+    var sub2 = new SubClass2(20, 'king');
+    sub2.arr.push(4);
+    var sub3 = new SubClass2(21, 'king');
+    console.log(sub2, sub3);
+    /* 缺点：无法给父类传参， 实例共享父类的引用属性*/
+
+    /* 组合继承*/
+    function SuperClass3(name) {
+        this.name = name;
+        this.arr = [1,2,3];
+
+    }
+    SuperClass3.prototype.say = function () {
+        console.log('my name is ' + this.name)
+    };
+    function SubClass3(age, name) {
+        this.age = age;
+        SuperClass1.call(this, name)
+    }
+    SubClass3.prototype = new SuperClass3();
+    var sub4 = new SubClass3(20, 'King');
+    console.log(sub4.say());
+    /* 缺点： 构造函数会被调用两次 */
+
+    /* 组合继承 优化1 */
+    function SuperClass4(name) {
+        this.name = name;
+        this.arr = [1,2,3];
+    }
+    SuperClass4.prototype.say = function () {
+        console.log('my name is ' + this.name)
+    };
+    function SubClass4(age, name) {
+        this.age = age;
+        SuperClass1.call(this, name)
+    }
+    SubClass4.prototype = SuperClass4.prototype;
+    var sub5 = new SuperClass4(20, 'King');
+    var sup1 = new SuperClass4('king');
+    console.log(sup1 instanceof SubClass4);
+    /* 缺点：无法识别类型 父类的实例 instaceof 子类的构造器 返回true */
+
+    /* 组合继承 优化2*/
+    function SuperClass5(name) {
+        this.name = name;
+    }
+    SuperClass5.prototype.say = function () {
+        console.log('my name is ' + this.name)
+    };
+    // 创建一个中间实例
+    function Middle() {
+
+    }
+    var middle = new Middle();
+    middle.__proto__ = new SuperClass5();
+    function SubClass5(age, name) {
+        this.age = age;
+        SuperClass5.call(this, name)
+    }
+    SubClass5.prototype = middle;
+   // SubClass5.prototype = Object.create(new SubClass5()) 相同
+    SubClass5.prototype.constructor = SubClass5;
+    var sup2 = new SuperClass5('K');
+    console.log(sup2 instanceof SubClass5); // false
+</script>
+</body>
+</html>

@@ -54,9 +54,12 @@
                 if (this.handlers[type] instanceof Array) {
                     var handlerArr = this.handlers[type];
                     for (var i = 0; i < handlerArr.length; i++) {
-                        handlerArr.indexOf(handlerArr)
+                        if(this.handlers[i] === handlerArr) {
+                            break;
+                        }
                     }
                 }
+                this.handlers.splice(i,1);
             }
         };
         var DragDrop = function () {

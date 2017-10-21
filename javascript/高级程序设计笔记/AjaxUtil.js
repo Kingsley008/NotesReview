@@ -118,7 +118,7 @@ AjaxUtil = {
             }
         };
         xhr.open('POST', option.url, true);
-        if (typeof option.data === 'string') {
+        if (typeof option.data === 'object') {
             var data = self.serializePOSTObj(option.data);
         } else {
             data = option.data;
@@ -166,5 +166,25 @@ AjaxUtil = {
         
     
 
-}
-;
+};
+
+
+/*var arr  = [];
+for (var i = 1; i <= 46; i++) {
+
+    for(var j = 1; j <= 46; j++){
+
+        arr.push(Math.pow(i,j)%47)
+    }
+
+    arr.reduce(function(list,prev){
+        if(list.indexOf(prev) > -1 &&  prev === 1){
+            console.log(i + '不是本原根');
+        } else {
+            list.push(prev)
+        }
+        return list
+    },[]);
+    arr = [];
+
+}*/

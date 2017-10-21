@@ -60,7 +60,7 @@ CSS样式操作
     * element.offsetTop  元素上外边框 到 包含元素上内边框的距离
     * element.offsetLeft 元素左外边框 到 包含元素左内边框的距离
     * element.offsetWidth  = content + padding + border + slider 可见
-    * element.offsetHeight =   content + padding + border + slider 可见
+    * element.offsetHeight = content + padding + border + slider 可见
     ```javascript
         // 得到某个元素在页面中的偏移量
         function getoffsetTopInPage(element) {
@@ -110,7 +110,7 @@ DOM遍历
         };
         var iterator = document.createNodeIterator(div, NodeFilter.SHOW_ELEMENT,filter,false);
         var node = iterator.nextNode();
-        while (node != null) {
+        while (node !== null) {
             console.log(node.tagName);
             node = iterator.nextNode();
         }

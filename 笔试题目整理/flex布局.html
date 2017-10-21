@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex布局</title>
+    <style>
+        .container{
+            display: flex;
+            width:200px;
+            height: 200px;
+            /* 决定了主轴的方向 Y轴 */
+            flex-direction: column;
+            border: 1px solid black;
+            /* 主轴上项目的排列 两端对齐 */
+            justify-content: space-between;
+        }
+        .circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: yellowgreen;
+        }
+        .circle.A{
+            /* 确定各自辅轴上的位置 */
+            align-self:flex-start;
+        }
+        .circle.B{
+            align-self: center;
+        }
+        .circle.C{
+            align-self: flex-end;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle A"></div>
+        <div class="circle B"></div>
+        <div class="circle C"></div>
+    </div>
+
+</body>
+</html>

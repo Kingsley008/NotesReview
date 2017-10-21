@@ -41,9 +41,9 @@
     [ column-count ]:设置或检索对象的列数 
     * 文字特效：text-decoration text-shadow
     * 边框的阴影： box-shadow 
-    * 渐变： gradient
+    * 渐变： gradient 
 6. display 有哪些属性值 特点是什么
-    * none -- 缺省 像行内元素一样显示
+    * none -- 元素不会被渲染
     * block -- 块级元素  内容高度 父容器宽度 可设宽高 换行显示
     * inline -- 行内元素 内容高度 内容宽度 不可设宽高 同行显示
     * inline-block -- 行内-块级元素  内容高度 内容宽度 可设置宽高 同行显示
@@ -53,7 +53,7 @@
     * static 元素按照文档流顺序排列(z-index 属性无效 top left .. 无效)
     * relative 元素不会脱离文档流，把自身作为参照物来进行定位，常用来为后代元素position:absolute提供定位参照物
     * absolute 元素会脱离文档流，把第一个非static的祖先定位元素当作参照物，如果没有，则为浏览器窗口。
-    * fixed 元素脱离文档流，以浏览器窗口作为定位元素。
+    * fixed 元素脱离文档流，以浏览器窗口作为参照物。
 8. float 浮动元素有什么特点？ 如何清除浮动 ？
     * float 元素半脱离文档流， 内容在文档流中，元素脱离文档流。
     * container::after{ content:"."; display:inline-block; height:0px; clear:both; visibility:hidden }           

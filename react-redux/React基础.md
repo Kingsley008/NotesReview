@@ -1,5 +1,6 @@
 React基本概念
 --
+* React采用数据驱动视图更新的原理，让开发者专注于要显示什么，而不是怎么样去显示。
 * React 是基于组件来开发应用的，用分治的思想，将一个大应用分解成若干个组件，每个组件只关注完成某个小范围的特定功能。
 符合软件开发中高内聚，低耦合的思想。
 * React 采用了JSX语法，凡是在代码中使用了JSX语法就要引入React包。
@@ -25,8 +26,8 @@ React生命周期
         * render: 纯函数，必须要实现
         * componentDidMount：组件被装载到DOM树上时被调用(可以调用jQuer代码)
     * 更新过程（Update）
-        * componentWillReceiveProps
         * shouldComponentUpdate: 自己定义此函数 可以提高组件性能 避免不必要的渲染
+        * componentWillReceiveProps
         * componentWillUpdate:
         * render：
         * componentDidUpdate：组件更新到DOM树上时被调用(可以调用jQuer代码)
@@ -36,7 +37,13 @@ React生命周期
 React: props 和 state 
 --
 * React中使用props代表组件向外部提供的数据接口 使用state 表示自己本身的数据接口
+* props在组件外部被定义，不能修改,state是组件内部状态，用来被修改。
 * 使用props 和 state 存在的问题
     * 数据冗余 
     * 组件之间的数据可能会发生不一致
     * 跨组件传递数据，造成耦合较高
+    
+    
+reducera
+--
+* 在javascript中对象是引用数据类型，当你修改了state的时候，变化前后的两个state将会指向同一个地址的，react-redux就会以为这两个相同的state，因为不会执行渲染

@@ -4,9 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/interview/README.md" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10b7f605-d7d2-40a0-8cd6-72673f206f6e" name="Default" comment="apply  call 模拟实现">
+    <list default="true" id="10b7f605-d7d2-40a0-8cd6-72673f206f6e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interview/算法/算法.md" afterPath="$PROJECT_DIR$/interview/算法/算法.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/笔试题目整理/校招题记录.md" afterPath="$PROJECT_DIR$/笔试题目整理/校招题记录.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -38,15 +37,15 @@
         <entry file="file://$PROJECT_DIR$/笔试题目整理/校招题记录.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1664">
-                <caret line="115" column="15" lean-forward="true" selection-start-line="115" selection-start-column="15" selection-end-line="115" selection-end-column="15" />
+              <first_editor relative-caret-position="390">
+                <caret line="24" column="3" lean-forward="false" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
                 <folding>
-                  <marker date="1508652103160" expanded="true" signature="129:237" ph="{...}" />
-                  <marker date="1508652103160" expanded="true" signature="849:1005" ph="{...}" />
-                  <marker date="1508652103160" expanded="true" signature="918:966" ph="{...}" />
-                  <marker date="1508652103160" expanded="true" signature="1957:1986" ph="{...}" />
-                  <marker date="1508652103160" expanded="true" signature="2025:2085" ph="{...}" />
-                  <marker date="1508652103160" expanded="true" signature="2117:2177" ph="{...}" />
+                  <marker date="1508652577756" expanded="true" signature="137:261" ph="{...}" />
+                  <marker date="1508652577756" expanded="true" signature="882:1038" ph="{...}" />
+                  <marker date="1508652577756" expanded="true" signature="951:999" ph="{...}" />
+                  <marker date="1508652577756" expanded="true" signature="1990:2019" ph="{...}" />
+                  <marker date="1508652577756" expanded="true" signature="2058:2118" ph="{...}" />
+                  <marker date="1508652577756" expanded="true" signature="2150:2210" ph="{...}" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -404,7 +403,7 @@
       <workItem from="1508573236592" duration="1229000" />
       <workItem from="1508579540061" duration="7754000" />
       <workItem from="1508639050413" duration="5015000" />
-      <workItem from="1508649621244" duration="2375000" />
+      <workItem from="1508649621244" duration="2846000" />
     </task>
     <task id="LOCAL-00001" summary="添加了 离线缓存的知识点">
       <created>1504068584750</created>
@@ -721,11 +720,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508643650426</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="更新">
+      <created>1508652126604</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1508652126605</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="348912000" />
+    <option name="totallyTimeSpent" value="349383000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-10" y="-10" width="1940" height="1043" extended-state="6" />
@@ -799,9 +805,9 @@
     <MESSAGE value="BFC" />
     <MESSAGE value="DOM 事件流" />
     <MESSAGE value="更新目录" />
-    <MESSAGE value="更新" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1382,15 +1388,15 @@
     <entry file="file://$PROJECT_DIR$/笔试题目整理/校招题记录.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1664">
-            <caret line="115" column="15" lean-forward="true" selection-start-line="115" selection-start-column="15" selection-end-line="115" selection-end-column="15" />
+          <first_editor relative-caret-position="390">
+            <caret line="24" column="3" lean-forward="false" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
             <folding>
-              <marker date="1508652103160" expanded="true" signature="129:237" ph="{...}" />
-              <marker date="1508652103160" expanded="true" signature="849:1005" ph="{...}" />
-              <marker date="1508652103160" expanded="true" signature="918:966" ph="{...}" />
-              <marker date="1508652103160" expanded="true" signature="1957:1986" ph="{...}" />
-              <marker date="1508652103160" expanded="true" signature="2025:2085" ph="{...}" />
-              <marker date="1508652103160" expanded="true" signature="2117:2177" ph="{...}" />
+              <marker date="1508652577756" expanded="true" signature="137:261" ph="{...}" />
+              <marker date="1508652577756" expanded="true" signature="882:1038" ph="{...}" />
+              <marker date="1508652577756" expanded="true" signature="951:999" ph="{...}" />
+              <marker date="1508652577756" expanded="true" signature="1990:2019" ph="{...}" />
+              <marker date="1508652577756" expanded="true" signature="2058:2118" ph="{...}" />
+              <marker date="1508652577756" expanded="true" signature="2150:2210" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />
